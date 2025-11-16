@@ -418,7 +418,7 @@ poller = LoopAgent(
 
 This code excerpt elucidates the SequentialAgent pattern within the Google ADK, engineered for the construction of linear workflows. This code defines a sequential agent pipeline using the google.adk.agents library. The pipeline consists of two agents, step1 and step2. step1 is named "Step1_Fetch" and its output will be stored in the session state under the key "data". step2 is named "Step2_Process" and is instructed to analyze the information stored in session.state["data"] and provide a summary. The SequentialAgent named "MyPipeline" orchestrates the execution of these sub-agents. When the pipeline is run with an initial input, step1 will execute first. The response from step1 will be saved into the session state under the key "data". Subsequently, step2 will execute, utilizing the information that step1 placed into the state as per its instruction. This structure allows for building workflows where the output of one agent becomes the input for the next. This is a common pattern in creating multi-step AI or data processing pipelines.
 
-<mark>下面的代码演示了如何通过 Google ADK 中的 <code>SequentialAgent</code> 来构建线性工作流。
+<mark>下面的代码演示了如何通过 Google ADK 中的 <code>SequentialAgent</code> 来构建线性工作流。</mark>
 
 <mark>代码首先使用 <code>google.adk.agents</code> 库定义了由两个智能体组成的顺序流水线：<code>step1</code> 和 <code>step2</code>。</mark>
 
