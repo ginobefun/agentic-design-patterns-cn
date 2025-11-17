@@ -172,7 +172,7 @@ To illustrate the Knowledge Retrieval (RAG) pattern, let's see three examples.
 
 First, is how to use Google Search to do RAG and ground LLMs to search results. Since RAG involves accessing external information, the Google Search tool is a direct example of a built-in retrieval mechanism that can augment an LLM's knowledge.
 
-<mark>首先，是如何使用 Google Search 进行 RAG，并基于搜索结果让 LLM 回答。由于 RAG 涉及访问外部信息，Google Search 工具是一个具备内置检索机制，能够增强 LLM 知识的的直接例子。</mark>
+<mark>首先，是如何使用 Google Search 进行 RAG，并基于搜索结果让 LLM 回答。由于 RAG 涉及访问外部信息，Google Search 工具是一个具备内置检索机制，能够增强 LLM 知识的直接例子。</mark>
 
 ```python
 from google.adk.tools import google_search
@@ -377,7 +377,7 @@ Why: The Retrieval-Augmented Generation (RAG) pattern provides a standardized so
 
 Rule of thumb: Use this pattern when you need an LLM to answer questions or generate content based on specific, up-to-date, or proprietary information that was not part of its original training data. It is ideal for building Q&A systems over internal documents, customer support bots, and applications requiring verifiable, fact-based responses with citations.
 
-<mark><strong>经验法则</strong>：当你需要 LLM 基于其原始训练数据之外的特定、最新或专有信息，来回答问题或生成内容时，应当使用 RAG 模式。它非常适合用于构建基于内部文档的问答系统、客户支持机器人，以及需要可验证的、基于事实且响应中带引用的的应用。</mark>
+<mark><strong>经验法则</strong>：当你需要 LLM 基于其原始训练数据之外的特定、最新或专有信息，来回答问题或生成内容时，应当使用 RAG 模式。它非常适合用于构建基于内部文档的问答系统、客户支持机器人，以及需要可验证的、基于事实且响应中带引用的应用。</mark>
 
 ## Visual Summary | <mark>可视化总结</mark>
 
