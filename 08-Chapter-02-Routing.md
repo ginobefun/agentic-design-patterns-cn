@@ -86,7 +86,7 @@ In human-computer interaction, such as with virtual assistants or AI-driven tuto
 
 Within automated data and document processing pipelines, routing serves as a classification and distribution function. Incoming data, such as emails, support tickets, or API payloads, is analyzed based on content, metadata, or format. The system then directs each item to a corresponding workflow, such as a sales lead ingestion process, a specific data transformation function for JSON or CSV formats, or an urgent issue escalation path.
 
-<mark>**数据处理流水线**：在自动化数据和文档处理流水线中，路由充当分类和分发功能。系统基于内容、元数据或格式对传入的数据（如电子邮件、支持工单或 API 负载）进行分析，然后将每项内容导向相应的工作流，例如销售线索处理流程、针对 JSON 或 CSV 格式的特定数据转换功能，或紧急问题升级路径。</mark>
+<mark>**数据处理流水线**：在自动化数据和文档处理流水线中，路由充当分类和分发功能。系统基于内容、元数据或格式对传入的数据（如电子邮件、支持工单或 API 负载）进行分析，然后将每项内容导向相应的工作流，例如销售线索录入流程、针对 JSON 或 CSV 格式的特定数据转换功能，或紧急问题升级路径。</mark>
 
 In complex systems involving multiple specialized tools or agents, routing acts as a high-level dispatcher. A research system composed of distinct agents for searching, summarizing, and analyzing information would use a router to assign tasks to the most suitable agent based on the current objective. Similarly, an AI coding assistant uses routing to identify the programming language and user's intent—to debug, explain, or translate—before passing a code snippet to the correct specialized tool.
 
@@ -460,7 +460,7 @@ The main function demonstrates the system's usage by running the coordinator wit
 
 **Rule of Thumb:** Use the Routing pattern when an agent must decide between multiple distinct workflows, tools, or sub-agents based on the user's input or the current state. It is essential for applications that need to triage or classify incoming requests to handle different types of tasks, such as a customer support bot distinguishing between sales inquiries, technical support, and account management questions.
 
-<mark><strong>适用场景：</strong>当智能体必须根据用户输入或当前状态在多个不同的工作流、工具或子智能体之间做出选择时，应使用路由模式。此模式对于需要对传入请求进行分类或分派以处理不同类型任务的应用至关重要，例如客户支持机器人需要区分销售咨询、技术支持和账户管理问题，并将每种类型的请求路由到相应的处理模块。</mark>
+<mark><strong>经验法则：</strong>当智能体必须根据用户输入或当前状态在多个不同的工作流、工具或子智能体之间做出选择时，应使用路由模式。此模式对于需要对传入请求进行分类或分派以处理不同类型任务的应用至关重要，例如客户支持机器人需要区分销售咨询、技术支持和账户管理问题，并将每种类型的请求路由到相应的处理模块。</mark>
 
 **Visual summary** | <mark>可视化总结</mark>
 
