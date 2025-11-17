@@ -76,7 +76,7 @@ Exception Handling and Recovery is critical for any agent deployed in a real-wor
 
 In short, this pattern is fundamental for building agents that are not only intelligent but also reliable, resilient, and user-friendly in the face of real-world complexities.
 
-<mark>简而言之，要构建一个不仅智能，还能在面对现实世界的复杂性时，能够可靠、有韧性且用户友好的智能体，该模式就其基础。</mark>
+<mark>简而言之，要构建一个不仅智能，还能在面对现实世界的复杂性时，能够可靠、有韧性且用户友好的智能体，该模式就是其基础。</mark>
 
 # Hands-On Code Example (ADK) | <mark>使用 ADK 的实战代码</mark>
 
