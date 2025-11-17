@@ -365,7 +365,7 @@ GoD (Graph of Debates) is an advanced Agentic framework that reimagines discussi
 
 MASS employs a multi-stage optimization strategy that systematically navigates the complex design space by interleaving prompt and topology optimization (see Fig. 4)
 
-<mark>MASS 采用一种多阶段优化策略，通过交错进行提示优化和拓扑优化，系统地导航复杂的涉及空间（参见图 4）。</mark>
+<mark>MASS 采用一种多阶段优化策略，通过交错进行提示优化和拓扑优化，系统地导航复杂的设计空间（参见图 4）。</mark>
 
 **1. Block-Level Prompt Optimization:** The process begins with a local optimization of prompts for individual agent types, or "blocks," to ensure each component performs its role effectively before being integrated into a larger system. This initial step is crucial as it ensures that the subsequent topology optimization builds upon well-performing agents, rather than suffering from the compounding impact of poorly configured ones. For example, when optimizing for the HotpotQA dataset, the prompt for a "Debator" agent is creatively framed to instruct it to act as an "expert fact-checker for a major publication". Its optimized task is to meticulously review proposed answers from other agents, cross-reference them with provided context passages, and identify any inconsistencies or unsupported claims. This specialized role-playing prompt, discovered during block-level optimization, aims to make the debator agent highly effective at synthesizing information before it's even placed into a larger workflow.
 
