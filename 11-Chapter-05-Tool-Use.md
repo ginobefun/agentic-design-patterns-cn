@@ -104,7 +104,7 @@ Using external calculators, data analysis libraries, or statistical tools.
 - <mark><strong>工具：</strong>计算器函数、股票行情接口、电子表格工具。</mark>
 - <mark><strong>智能体流程：</strong>用户提问「苹果公司当前股价是多少？如果我以 150 美元买入 100 股，可能会赚多少钱？」，大语言模型会先调用股票行情接口获取最新价格，然后调用计算器工具计算收益，最后把结果整理并返回给用户。</mark>
 
-**4. Sending Communications:** | <mark><strong>发送通知：</strong></mark>
+**4. Sending Communications:** | <mark><strong>发送消息：</strong></mark>
 
 Sending emails, messages, or making API calls to external communication services.
 
@@ -398,7 +398,7 @@ financial_crew = Crew(
 # --- 5. Run the Crew within a Main Execution Block ---
 # Using a __name__ == "__main__": block is a standard Python best practice.
 # --- 5. 在主程序中运行 ---
-# 使用 __name__ == "__main__": 块是 Python 的最佳实践。
+# 使用 __name__ == "__main__": 代码块是 Python 的最佳实践。
 def main():
     """Main function to run the crew."""
     # Check for API key before starting to avoid runtime errors.
@@ -661,7 +661,7 @@ This script uses Google's Agent Development Kit (ADK) to create an agent that so
 
 <mark>核心的异步函数 <code>call_vsearch_agent_async</code> 用于与智能体交互，该函数接收查询请求构造为消息对象，并作为参数传给 <code>run_async</code> 方法从而实现将查询请求发送给智能体并等待异步事件返回。</mark>
 
-<mark>随后该函数以流式方式将智能体的响应输出到控制台，并打印关于最终响应的信息，包括来自数据存储的元数据。代码具备错误处理机制，以捕获智能体执行期间的异常，并提供有价值的上下文信息，如数据存储 ID 不正确或权限缺失等。</mark>
+<mark>随后该函数以流式方式将智能体的响应输出到控制台，并打印关于最终响应的信息，包括来自数据存储的引用来源。代码具备错误处理机制，以捕获智能体执行期间的异常，并提供有价值的上下文信息，如数据存储 ID 不正确或权限缺失等。</mark>
 
 <mark>另一个异步函数 <code>run_vsearch_example</code> 用于演示如何调用该智能体。主执行块先检查 <code>DATASTORE_ID</code> 是否已设置，然后使用 <code>asyncio.run</code> 运行示例。代码最后还包含一个异常检查，避免在已有运行事件循环的环境（如 Jupyter notebook）中运行代码时出现错误。</mark>
 
