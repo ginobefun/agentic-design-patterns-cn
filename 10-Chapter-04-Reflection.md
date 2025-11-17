@@ -140,7 +140,7 @@ Evaluating a proposed plan and identifying potential flaws or improvements.
 - **Reflection:** Generate a plan, simulate its execution or evaluate its feasibility against constraints, revise the plan based on the evaluation.
 - **Benefit:** Develops more effective and realistic plans.
 
-- <mark><strong>用例：</strong>规划一系列行动以实现特定任务的智能体。</mark>
+- <mark><strong>用例：</strong>规划一系列行动以实现特定目标的智能体。</mark>
 - <mark><strong>反思：</strong>制定计划，模拟执行或根据限制评估可行性，然后根据评估结果对计划进行改进与调整。</mark>
 - <mark><strong>好处：</strong>制定更有效、更符合实际的计划。</mark>
 
