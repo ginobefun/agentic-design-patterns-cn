@@ -6,7 +6,7 @@ While a monolithic agent architecture can be effective for well-defined problems
 
 For example, a complex research query might be decomposed and assigned to a Research Agent for information retrieval, a Data Analysis Agent for statistical processing, and a Synthesis Agent for generating the final report. The efficacy of such a system is not merely due to the division of labor but is critically dependent on the mechanisms for inter-agent communication. This requires a standardized communication protocol and a shared ontology, allowing agents to exchange data, delegate sub-tasks, and coordinate their actions to ensure the final output is coherent.
 
-<mark>例如，一个复杂的研究问题可以这样拆分：由研究智能体负责信息检索、数据分析智能体负责统计处理、综合智能体负责生成最终报告。这类系统的效果不仅源于分工，更取决于智能体之间的通信机制。为此需要标准化的通信协议和共享机制，使智能体之间能够交换数据、委派子任务和协调行动，以确保最终结果的连贯一致。</mark>
+<mark>例如，一个复杂的研究问题可以这样拆分：由研究智能体负责信息检索、数据分析智能体负责统计处理、综合智能体负责生成最终报告。这类系统的效果不仅源于分工，更取决于智能体之间的通信机制。为此需要标准化的通信协议和共享本体（Ontology），使智能体之间能够交换数据、委派子任务和协调行动，以确保最终结果的连贯一致。</mark>
 
 This distributed architecture offers several advantages, including enhanced modularity, scalability, and robustness, as the failure of a single agent does not necessarily cause a total system failure. The collaboration allows for a synergistic outcome where the collective performance of the multi-agent system surpasses the potential capabilities of any single agent within the ensemble.
 
@@ -100,7 +100,7 @@ Multi-Agent Collaboration is a powerful pattern applicable across numerous domai
 
 The capacity to delineate specialized agents and meticulously orchestrate their interrelationships empowers developers to construct systems exhibiting enhanced modularity, scalability, and the ability to address complexities that would prove insurmountable for a singular, integrated agent.
 
-<mark>将任务拆分给多个专业智能体并精心协调它们的协作，可以让开发者构建出更具模块化和可扩展性的系统，从而解决单个整体智能体无法应对的复杂问题。这正是多智能体协作模式的核心价值所在。</mark>
+<mark>将任务拆分给多个专业智能体并精心编排它们的协作，可以让开发者构建出更具模块化和可扩展性的系统，从而解决单个整体智能体无法应对的复杂问题。这正是多智能体协作模式的核心价值所在。</mark>
 
 ---
 
