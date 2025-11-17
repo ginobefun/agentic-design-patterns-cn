@@ -16,7 +16,7 @@ In the context of AI agents, planning typically involves an agent taking a high-
 
 A good planning capability allows agents to tackle problems that aren't simple, single-step queries. It enables them to handle multi-faceted requests, adapt to changing circumstances by replanning, and orchestrate complex workflows. It's a foundational pattern that underpins many advanced agentic behaviors, turning a simple reactive system into one that can proactively work towards a defined objective.
 
-<mark>良好的规划能力，使智能体不止能够处理简单的单步查询问题。规划还使的智能体能够处理多个面向的请求，通过重新规划来适应变化，并编排复杂的工作流程。这是一个基础模式，支撑着许多高级智能体行为，将简单的反应式系统，转变为能够主动努力实现既定目标的系统。</mark>
+<mark>良好的规划能力，使智能体不止能够处理简单的单步查询问题。规划还使得智能体能够处理多个面向的请求，通过重新规划来适应变化，并编排复杂的工作流程。这是一个基础模式，支撑着许多高级智能体行为，将简单的反应式系统，转变为能够主动努力实现既定目标的系统。</mark>
 
 ## Practical Applications & Use Cases | <mark>实际应用场景</mark>
 
