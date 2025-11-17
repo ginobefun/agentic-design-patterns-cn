@@ -20,7 +20,7 @@ Furthermore, prompt chaining is not just about breaking down problems; it also e
 
 **Limitations of single prompts:** For multifaceted tasks, using a single, complex prompt for an LLM can be inefficient, causing the model to struggle with constraints and instructions, potentially leading to instruction neglect where parts of the prompt are overlooked, contextual drift where the model loses track of the initial context, error propagation where early errors amplify, prompts which require a longer context window where the model gets insufficient information to respond back and hallucination where the cognitive load increases the chance of incorrect information. For example, a query asking to analyze a market research report, summarize findings, identify trends with data points, and draft an email risks failure as the model might summarize well but fail to extract data or draft an email properly.
 
-<mark><strong>单一提示的局限性：</strong>对于包含多个子任务的复杂任务，使用单一复杂提示往往效率不高。模型可能难以同时满足多项约束和指示，从而出现以下问题：忽视部分指令、丢失初始上下文、早期错误被放大、上下文超出窗口导致信息不足，以及因认知负担加重而产生幻觉。</mark>
+<mark><strong>单一提示的局限性：</strong>对于包含多个子任务的复杂任务，使用单一复杂提示往往效率不高。模型可能难以同时满足多项约束和指示，从而出现以下问题：忽视部分指令、上下文漂移（contextual drift）、早期错误被放大、上下文超出窗口导致信息不足，以及因认知负担加重而产生幻觉。</mark>
 
 <mark>例如，要求模型在单次调用中同时完成分析市场报告、总结要点、识别趋势和草拟邮件等多项任务，失败概率极高。模型或许能给出不错的总结，但在提取精确数据或撰写得体邮件这类更细致的环节上，就很容易出错。</mark>
 
