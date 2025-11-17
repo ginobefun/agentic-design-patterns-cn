@@ -37,7 +37,7 @@ Error Handling: Once an error is detected, a carefully thought-out response plan
 
 Recovery: This stage is about restoring the agent or system to a stable and operational state after an error. It could involve reversing recent changes or transactions to undo the effects of the error (state rollback). A thorough investigation into the cause of the error is vital for preventing recurrence. Adjusting the agent's plan, logic, or parameters through a self-correction mechanism or replanning process may be needed to avoid the same error in the future. In complex or severe cases, delegating the issue to a human operator or a higher-level system (escalation) might be the best course of action.
 
-<mark><strong>恢复：</strong>该阶段旨在将代理或系统恢复到稳定且可运行的状态。这可能涉及撤销最近的更改或事务，以消除错误的影响（状态回滚）。深入调查错误原因是防止再次发生的关键。可能需要通过自我纠正机制或重新规划过程，调整智能体的计划、逻辑或参数，以避免将来出现相同错误。在复杂或严重的情况下，将问题上报给人工操作员或更高级系统（升级处理）可能是最佳解决方案。</mark>
+<mark><strong>恢复：</strong>该阶段旨在将智能体或系统恢复到稳定且可运行的状态。这可能涉及撤销最近的更改或事务，以消除错误的影响（状态回滚）。深入调查错误原因是防止再次发生的关键。可能需要通过自我纠正机制或重新规划过程，调整智能体的计划、逻辑或参数，以避免将来出现相同错误。在复杂或严重的情况下，将问题上报给人工操作员或更高级系统（升级处理）可能是最佳解决方案。</mark>
 
 Implementation of this robust exception handling and recovery pattern can transform AI agents from fragile and unreliable systems into robust, dependable components capable of operating effectively and resiliently in challenging and highly unpredictable environments. This ensures that the agents maintain functionality, minimize downtime, and provide a seamless and reliable experience even when faced with unexpected issues.
 
