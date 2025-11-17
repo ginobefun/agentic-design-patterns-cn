@@ -32,7 +32,7 @@ The process typically involves:
 
 4. **Iteration (Optional but common):** The refined output or adjusted approach can then be executed, and the reflection process can repeat until a satisfactory result is achieved or a stopping condition is met.
 
-   <mark><strong>迭代（可选，但很常见）：</strong>随后，智能体便会将优化后的输出或调整过的方法付诸执行，并循环往复地进行整个反思过程，直到最终结果令人满意，或满足了预设的停止条件</mark>
+   <mark><strong>迭代（可选，但很常见）：</strong>随后，智能体便会将优化后的输出或调整过的方法付诸执行，并循环往复地进行整个反思过程，直到最终结果令人满意，或满足了预设的停止条件。</mark>
 
 A key and highly effective implementation of the Reflection pattern separates the process into two distinct logical roles: a Producer and a Critic. This is often called the "Generator-Critic" or "Producer-Reviewer" model. While a single agent can perform self-reflection, using two specialized agents (or two separate LLM calls with distinct system prompts) often yields more robust and unbiased results.
 
