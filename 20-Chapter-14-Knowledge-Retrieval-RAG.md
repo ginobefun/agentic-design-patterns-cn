@@ -28,7 +28,7 @@ To fully appreciate how RAG functions, it's essential to understand a few core c
 
 Embeddings: In the context of LLMs, embeddings are numerical representations of text, such as words, phrases, or entire documents. These representations are in the form of a vector, which is a list of numbers. The key idea is to capture the semantic meaning and the relationships between different pieces of text in a mathematical space. Words or phrases with similar meanings will have embeddings that are closer to each other in this vector space. For instance, imagine a simple 2D graph. The word "cat" might be represented by the coordinates (2, 3), while "kitten" would be very close at (2.1, 3.1). In contrast, the word "car" would have a distant coordinate like (8, 1), reflecting its different meaning. In reality, these embeddings are in a much higher-dimensional space with hundreds or even thousands of dimensions, allowing for a very nuanced understanding of language.
 
-<mark><strong>嵌入（Embeddings）</strong>：在 LLM 的语境中，嵌入是以数字形式表示文本，例如词语、短语或整个文档。这些表示以向量（即数字的列表）的形式存在。其核心思想是在一个数学空间中捕捉不同文本片段之间的语义含义和关系。含义相近的词语或短语，其嵌入在向量空间中的距离也更近。例如，在一个简单的二维图表中，「cat」（猫）一词可能由坐标 (2, 3) 表示，而「kitten」（小猫）也会位于非常接近的 (2.1, 3.1)。相比之下，「car」（小汽车）一词的坐标则可能在很远的位置，如 (8, 1)，反映了其不同的含义。实际上，这些嵌入存在于维度高得多的空间中，拥有数百甚至数千个维度，从而能够对语言有非常细致的理解。</mark>
+<mark><strong>嵌入（Embeddings）</strong>：在 LLM 的语境中，嵌入文本的数值，例如词语、短语或整个文档。这些表示以向量（即数字的列表）的形式存在。其核心思想是在一个数学空间中捕捉不同文本片段之间的语义含义和关系。含义相近的词语或短语，其嵌入在向量空间中的距离也更近。例如，在一个简单的二维图表中，「cat」（猫）一词可能由坐标 (2, 3) 表示，而「kitten」（小猫）也会位于非常接近的 (2.1, 3.1)。相比之下，「car」（小汽车）一词的坐标则可能在很远的位置，如 (8, 1)，反映了其不同的含义。实际上，这些嵌入存在于维度高得多的空间中，拥有数百甚至数千个维度，从而能够对语言有非常细致的理解。</mark>
 
 Text Similarity: Text similarity refers to the measure of how alike two pieces of text are. This can be at a surface level, looking at the overlap of words (lexical similarity), or at a deeper, meaning-based level. In the context of RAG, text similarity is crucial for finding the most relevant information in the knowledge base that corresponds to a user's query. 
 
@@ -53,7 +53,7 @@ Fig.1: RAG Core Concepts: Chunking, Embeddings, and Vector Database
 
 Chunking of Documents: Chunking is the process of breaking down large documents into smaller, more manageable pieces, or "chunks." For a RAG system to work efficiently, it cannot feed entire large documents into the LLM. Instead, it processes these smaller chunks. The way documents are chunked is important for preserving the context and meaning of the information. 
 
-<mark><strong>文档分块</strong>：分块是将大型文档分解成更小、更易于管理的小块或「块」（chunks）的过程。为了让 RAG 系统高效工作，不能将整个大型文档输入给 LLM，而是处理这些较小的块。文档的分块方式对于保留信息的上下文和含义非常重要。</mark>
+<mark><strong>文档分块</strong>：分块是将大型文档分解成更小、更易于管理的片段或「块」（chunks）的过程。为了让 RAG 系统高效工作，不能将整个大型文档输入给 LLM，而是处理这些较小的块。文档的分块方式对于保留信息的上下文和含义非常重要。</mark>
 
 For instance, instead of treating a 50-page user manual as a single block of text, a chunking strategy might break it down into sections, paragraphs, or even sentences. For instance, a section on "Troubleshooting" would be a separate chunk from the "Installation Guide." When a user asks a question about a specific problem, the RAG system can then retrieve the most relevant troubleshooting chunk, rather than the entire manual. This makes the retrieval process faster and the information provided to the LLM more focused and relevant to the user's immediate need. 
 
@@ -85,7 +85,7 @@ The system's effectiveness is also highly dependent on the quality of the chunki
 
 Besides that, another challenge is that RAG requires the entire knowledge base to be pre-processed and stored in specialized databases, such as vector or graph databases, which is a considerable undertaking. Consequently, this knowledge requires periodic reconciliation to remain up-to-date, a crucial task when dealing with evolving sources like company wikis. This entire process can have a noticeable impact on performance, increasing latency, operational costs, and the number of tokens used in the final prompt.
 
-<mark>除此之外，另一个挑战是 RAG 要求整个知识库都经过预处理，并且存储在专门的数据库中，如向量数据库或图数据库。这是一项相当大的工程。因此，这些知识需要定期的同步以保持更新。在处理像公司维基这样不断变化的来源时，这就是一项至关重要的任务。整个过程可能对性能产生显著影响，增加延迟、运营成本以及最终 Prompt 中使用的 token 数量。</mark>
+<mark>除此之外，另一个挑战是 RAG 要求整个知识库都经过预处理，并且存储在专门的数据库中，如向量数据库或图数据库。这是一项相当大的工程。因此，这些知识需要定期的校准以保持时效性。在处理像公司维基这样不断变化的来源时，这就是一项至关重要的任务。整个过程可能对性能产生显著影响，增加延迟、运营成本以及最终 Prompt 中使用的 token 数量。</mark>
 
 In summary, the Retrieval-Augmented Generation (RAG) pattern represents a significant leap forward in making AI more knowledgeable and reliable. By seamlessly integrating an external knowledge retrieval step into the generation process, RAG addresses some of the core limitations of standalone LLMs. The foundational concepts of embeddings and semantic similarity, combined with retrieval techniques like keyword and hybrid search, allow the system to intelligently find relevant information, which is made manageable through strategic chunking. 
 
@@ -97,7 +97,7 @@ This entire retrieval process is powered by specialized vector databases designe
 
 Graph RAG: GraphRAG is an advanced form of Retrieval-Augmented Generation that utilizes a knowledge graph instead of a simple vector database for information retrieval. It answers complex queries by navigating the explicit relationships (edges) between data entities (nodes) within this structured knowledge base. A key advantage is its ability to synthesize answers from information fragmented across multiple documents, a common failing of traditional RAG. By understanding these connections, GraphRAG provides more contextually accurate and nuanced responses.
 
-<mark><strong>图 RAG（Graph RAG）</strong>：GraphRAG 是一种先进的 RAG 形式，它利用知识图谱而非简单的向量数据库进行信息检索。它通过在结构化知识库中导航数据实体（节点）之间的显式关系（边）来回答复杂查询。其一个关键优势是能够综合来自多个文档中的碎片化信息来生成答案，而这正是传统 RAG 的一个常见短板。通过理解这些联系，GraphRAG 能够提供与上下文相符、更细致的响应。</mark>
+<mark><strong>图 RAG（Graph RAG）</strong>：GraphRAG 是一种先进的 RAG 形式，它利用知识图谱而非简单的向量数据库进行信息检索。它通过在结构化知识库中遍历数据实体（节点）之间的显式关系（边）来回答复杂查询。其一个关键优势是能够综合来自多个文档中的碎片化信息来生成答案，而这正是传统 RAG 的一个常见短板。通过理解这些联系，GraphRAG 能够提供与上下文相符、更细致的响应。</mark>
 
 Use cases include complex financial analysis, connecting companies to market events, and scientific research for discovering relationships between genes and diseases. The primary drawback, however, is the significant complexity, cost, and expertise required to build and maintain a high-quality knowledge graph. This setup is also less flexible and can introduce higher latency compared to simpler vector search systems. The system's effectiveness is entirely dependent on the quality and completeness of the underlying graph structure. Consequently, GraphRAG offers superior contextual reasoning for intricate questions but at a much higher implementation and maintenance cost. In summary, it excels where deep, interconnected insights are more critical than the speed and simplicity of standard RAG.
 
@@ -118,7 +118,7 @@ Fig.2: Agentic RAG introduces a reasoning agent that actively evaluates, reconci
 
 Second, an agent is adept at reconciling knowledge conflicts. Imagine a financial analyst asks, "What was Project Alpha's Q1 budget?" The system retrieves two documents: an initial proposal stating a €50,000 budget and a finalized financial report listing it as €65,000. An Agentic RAG would identify this contradiction, prioritize the financial report as the more reliable source, and provide the LLM with the verified figure, ensuring the final answer is based on the most accurate data.
 
-<mark>其次，智能体善于解决知识冲突。想象一位财务分析师问：「Alpha 项目第一季度的预算是多少？」系统检索到两份文件：一份是初步提案，预算为 50,000 欧元；另一份是最终财务报告，预算为 65,000 欧元。一个智能体式 RAG 会识别出这种矛盾，将财务报告作为更可靠的来源优先处理，并向 LLM 提供核实后的数字，确保最终答案基于最准确的数据。</mark>
+<mark>其次，智能体善于调和知识冲突。想象一位财务分析师问：「Alpha 项目第一季度的预算是多少？」系统检索到两份文件：一份是初步提案，预算为 50,000 欧元；另一份是最终财务报告，预算为 65,000 欧元。一个智能体式 RAG 会识别出这种矛盾，将财务报告作为更可靠的来源优先处理，并向 LLM 提供核实后的数字，确保最终答案基于最准确的数据。</mark>
 
 Third, an agent can perform multi-step reasoning to synthesize complex answers. If a user asks, "How do our product's features and pricing compare to Competitor X's?" the agent would decompose this into separate sub-queries. It would initiate distinct searches for its own product's features, its pricing, Competitor X's features, and Competitor X's pricing. After gathering these individual pieces of information, the agent would synthesize them into a structured, comparative context before feeding it to the LLM, enabling a comprehensive response that a simple retrieval could not have produced.
 
