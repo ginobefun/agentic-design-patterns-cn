@@ -58,7 +58,7 @@ The Human-in-the-Loop pattern is vital across a wide range of industries and app
 
 - **Customer Support (Complex Queries)**: A chatbot might handle routine customer inquiries. If the user's problem is too complex, emotionally charged, or requires empathy that the AI cannot provide, the conversation is seamlessly handed over to a human support agent.
 
-  <mark><strong>客户支持（复杂咨询）：</strong>聊天机器人可以处理常规的客户咨询。如果用户的问题过于复杂、情绪过于激动，或者需要 AI 无法提供的情感共鸣时，需要将对话转接给服务专家进行处理。</mark>
+  <mark><strong>客户支持（复杂咨询）：</strong>聊天机器人可以处理常规的客户咨询。如果用户的问题过于复杂、情绪过于激动，或者需要 AI 无法提供的情感共鸣时，需要将对话转接给人工坐席进行处理。</mark>
 
 - **Data Labeling and Annotation**: AI models often require large datasets of labeled data for training. Humans are put in the loop to accurately label images, text, or audio, providing the ground truth that the AI learns from. This is a continuous process as models evolve.
 
@@ -86,7 +86,7 @@ This pattern exemplifies a practical method for AI implementation. It harnesses 
 
 - **Modern call center**: In this setup, a human manager establishes high-level policies for customer interactions. For instance, the manager might set rules such as "any call mentioning 'service outage' should be immediately routed to a technical support specialist," or "if a customer's tone of voice indicates high frustration, the system should offer to connect them directly to a human agent." The AI system then handles the initial customer interactions, listening to and interpreting their needs in real-time. It autonomously executes the manager's policies by instantly routing the calls or offering escalations without needing human intervention for each individual case. This allows the AI to manage the high volume of immediate actions according to the slower, strategic guidance provided by the human operator.
 
-  <mark><strong>现代化呼叫中心：</strong>在此场景中，经理为客户互动建立高级策略。例如，经理可能设定规则，如「任何提到服务中断的电话应立即转接给技术支持专员」，或者「如果客户的语气表现出高度沮丧，系统应主动提出将他们转接给人工坐席。」然后，AI 系统会处理最初的客户互动，实时倾听并解释他们的需求。它通过即时转接电话或提供上报选项来自主执行经理的策略，而无需为每个个案都进行人工干预。这使得 AI 能够根据人类操作员提供的较慢、战略性的指导来管理大量的即时行动。</mark>
+  <mark><strong>现代化呼叫中心：</strong>在此场景中，经理为客户互动建立高级策略。例如，经理可能设定规则，如「任何提到服务中断的电话应立即转接给技术支持专员」，或者「如果客户的语气表现出高度沮丧，系统应主动提出将他们转接给人工坐席。」然后，AI 系统会处理最初的客户互动，实时倾听并解释他们的需求。它通过即时转接电话或提供升级服务选项来自主执行经理的策略，而无需为每个个案都进行人工干预。这使得 AI 能够根据人类操作员提供的较慢、战略性的指导来管理大量的即时行动。</mark>
 
 ## Hands-On Code Example | <mark>实战代码示例</mark>
 

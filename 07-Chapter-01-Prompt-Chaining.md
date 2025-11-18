@@ -20,7 +20,7 @@ Furthermore, prompt chaining is not just about breaking down problems; it also e
 
 **Limitations of single prompts:** For multifaceted tasks, using a single, complex prompt for an LLM can be inefficient, causing the model to struggle with constraints and instructions, potentially leading to instruction neglect where parts of the prompt are overlooked, contextual drift where the model loses track of the initial context, error propagation where early errors amplify, prompts which require a longer context window where the model gets insufficient information to respond back and hallucination where the cognitive load increases the chance of incorrect information. For example, a query asking to analyze a market research report, summarize findings, identify trends with data points, and draft an email risks failure as the model might summarize well but fail to extract data or draft an email properly.
 
-<mark><strong>单一提示的局限性：</strong>对于包含多个子任务的复杂任务，使用单一复杂提示往往效率不高。模型可能难以同时满足多项约束和指示，从而出现以下问题：忽视部分指令、上下文漂移（contextual drift）、早期错误被放大、上下文超出窗口导致信息不足，以及因认知负担加重而产生幻觉。</mark>
+<mark><strong>单一提示的局限性：</strong>对于包含多个子任务的复杂任务，使用单一复杂提示往往效率不高。模型可能难以同时满足多项约束和指示，从而出现以下问题：忽视部分指令、上下文漂移（Contextual Drift）、早期错误被放大、上下文超出窗口限制导致信息不足，以及因认知负担加重而产生幻觉。</mark>
 
 <mark>例如，要求模型在单次调用中同时完成分析市场报告、总结要点、识别趋势和草拟邮件等多项任务，失败概率极高。模型或许能给出不错的总结，但在提取精确数据或撰写得体邮件这类更细致的环节上，就很容易出错。</mark>
 
@@ -227,7 +227,7 @@ This principle is fundamental to the development of conversational agents, enabl
 
 **6. Code Generation and Refinement:** The generation of functional code is typically a multi-stage process, requiring a problem to be decomposed into a sequence of discrete logical operations that are executed progressively
 
-<mark><strong>代码生成和优化：</strong>功能性代码的生成通常是一个多阶段的过程，它要求将问题分解为一系列可有序执行的逻辑操作。</mark>
+<mark><strong>代码生成和优化：</strong>可用代码的生成通常是一个多阶段的过程，它要求将问题分解为一系列可有序执行的逻辑操作。</mark>
 
 - Prompt 1: Understand the user's request for a code function. Generate pseudocode or an outline.
 
@@ -378,13 +378,13 @@ This Python code demonstrates how to use the LangChain library to process text. 
 
 Context Engineering (see Fig.1) is the systematic discipline of designing, constructing, and delivering a complete informational environment to an AI model prior to token generation. This methodology asserts that the quality of a model's output is less dependent on the model's architecture itself and more on the richness of the context provided.
 
-<mark>上下文工程（Context Engineering，见图 1）是一门系统性的学科，它研究的是在 AI 模型生成词元（Token）之前，如何为其设计、构建并提供一个完整的信息环境。这一方法论主张，模型输出的质量与其说取决于模型自身的架构，不如说更依赖于所提供上下文的丰富程度。</mark>
+<mark>上下文工程（Context Engineering，见图 1）是一门系统性的学科，致力于在 AI 模型生成词元（Token）之前，如何为其设计、构建并提供一个完整的信息环境。这一方法论主张，模型输出的质量与其说取决于模型自身的架构，不如说更依赖于所提供上下文的丰富程度。</mark>
 
 ![上下文工程](/images/chapter01_fig1.png)
 
 Fig.1: Context Engineering is the discipline of building a rich, comprehensive informational environment for an AI, as the quality of this context is a primary factor in enabling advanced Agentic performance.
 
-<mark>图 1：上下文工程是一门为 AI 构建丰富、全面信息环境的学科，因为高质量的上下文是实现高级智能体性能的首要因素。</mark>
+<mark>图 1：上下文工程是一门为 AI 构建丰富、全面信息环境的学科，因为高质量的上下文是支撑高级智能体性能的首要因素。</mark>
 
 It represents a significant evolution from traditional prompt engineering, which focuses primarily on optimizing the phrasing of a user's immediate query. Context Engineering expands this scope to include several layers of information, such as the system prompt, which is a foundational set of instructions defining the AI's operational parameters—for instance, "You are a technical writer; your tone must be formal and precise." The context is further enriched with external data. This includes retrieved documents, where the AI actively fetches information from a knowledge base to inform its response, such as pulling technical specifications for a project. It also incorporates tool outputs, which are the results from the AI using an external API to obtain real-time data, like querying a calendar to determine a user's availability. This explicit data is combined with critical implicit data, such as user identity, interaction history, and environmental state. The core principle is that even advanced models underperform when provided with a limited or poorly constructed view of the operational environment.
 

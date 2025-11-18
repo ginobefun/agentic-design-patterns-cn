@@ -16,7 +16,7 @@ In agent systems, memory refers to an agent's ability to retain and utilize info
 
 <mark>上下文窗口的容量有限，限制了智能体可直接访问的近期信息范围。高效的短期记忆管理需要在有限空间内选择性地保留最相关信息，可通过总结旧对话片段或强调关键细节等技术实现。</mark>
 
-<mark>具有「长上下文」窗口的模型虽然扩大了短期记忆容量，允许在单次交互中保存更多信息，但这种上下文仍然是短暂的，会话结束后即丢失，且每次处理成本高昂、效率较低。</mark>
+<mark>具有「长上下文」窗口的模型虽然扩大了短期记忆容量，允许在单次交互中保存更多信息，但这种上下文仍然是临时的，会话结束后即丢失，且每次处理成本高昂、效率较低。</mark>
 
 <mark>因此，智能体需要不同类型的记忆来实现真正的持久化，从过往交互中回忆信息并构建持久的知识库。</mark>
 
@@ -296,8 +296,7 @@ def log_user_login(tool_context: ToolContext) -> dict:
   
    return {
        "status": "success",
-       "message": f"User login tracked. Total logins:
-{login_count}."
+       "message": f"User login tracked. Total logins: {login_count}."
    }
 
 # --- 使用演示 ---
@@ -497,8 +496,7 @@ conversation = LLMChain(llm=llm, prompt=prompt, memory=memory)
 # 4. 运行对话
 response = conversation.predict(question="I want to book a flight.")
 print(response)
-response = conversation.predict(question="My name is Sam, by the
-way.")
+response = conversation.predict(question="My name is Sam, by the way.")
 print(response)
 response = conversation.predict(question="What was my name again?")
 print(response)
@@ -786,3 +784,4 @@ This chapter dove into the really important job of memory management for agent s
 3. Vertex AI Agent Engine Memory Bank: <https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-memory-bank-in-public-preview>
 
    <mark>Vertex AI 智能体引擎的 Memory Bank：<https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-memory-bank-in-public-preview></mark>
+

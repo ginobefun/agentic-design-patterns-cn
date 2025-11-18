@@ -22,7 +22,7 @@ Examples:
 
 - **Game Playing and Strategy Generation:** Agents explore game states, discovering emergent strategies or identifying vulnerabilities in game environments (e.g., AlphaGo).
 
-  <mark><strong>游戏和策略生成：</strong>智能体探索游戏状态，发现涌现策略或识别游戏环境中的漏洞（例如 AlphaGo）。</mark>
+  <mark><strong>游戏博弈与策略生成：</strong>智能体探索游戏状态，发现涌现策略或识别游戏环境中的漏洞（例如 AlphaGo）。</mark>
 
 - **Market Research and Trend Spotting:** Agents scan unstructured data (social media, news, reports) to identify trends, consumer behaviors, or market opportunities.
 
@@ -102,7 +102,7 @@ The system follows an iterative "generate, debate, and evolve" approach mirrorin
 
 **Automated and Expert Evaluation:** On the challenging GPQA benchmark, the system's internal Elo rating was shown to be concordant with the accuracy of its results, achieving a top-1 accuracy of 78.4% on the difficult "diamond set". Analysis across over 200 research goals demonstrated that scaling test-time compute consistently improves the quality of hypotheses, as measured by the Elo rating. On a curated set of 15 challenging problems, the AI co-scientist outperformed other state-of-the-art AI models and the "best guess" solutions provided by human experts. In a small-scale evaluation, biomedical experts rated the co-scientist's outputs as more novel and impactful compared to other baseline models. The system's proposals for drug repurposing, formatted as NIH Specific Aims pages, were also judged to be of high quality by a panel of six expert oncologists.
 
-<mark><strong>自动化和专家评估：</strong>在具有挑战性的 GPQA 基准测试中，该系统的内部 Elo 评级与其结果的准确性一致，在困难的「钻石集」上达到了 78.4% 的 top-1 准确率。对超过 200 个研究目标的分析表明，扩展测试时计算可以持续提高假设质量（通过 Elo 评级衡量）。在精心策划的 15 个具有挑战性的问题集上，AI 协作科学家的表现优于其他最先进的 AI 模型和人类专家提供的「最佳猜测」解决方案。在小规模评估中，生物医学专家认为协作科学家的输出比其他基线模型更新颖、更具影响力。该系统提出的药物再利用提案（格式化为 NIH 特定目标页面）也被六位肿瘤学专家小组评为高质量。</mark>
+<mark><strong>自动化和专家评估：</strong>在具有挑战性的 GPQA 基准测试中，该系统的内部 Elo 评级与其结果的准确性一致，在困难的「钻石集」上达到了 78.4% 的 top-1 准确率。对超过 200 个研究目标的分析表明，扩展测试时计算可以持续提高假设质量（通过 Elo 评级衡量）。在精心策划的 15 个具有挑战性的问题集上，AI 协作科学家的表现优于其他最先进的 AI 模型和人类专家提供的「最佳猜测」解决方案。在小规模评估中，生物医学专家认为协作科学家的输出比其他基线模型更新颖、更具影响力。该系统提出的药物重定位提案（格式化为 NIH 特定目标页面）也被六位肿瘤学专家小组评为高质量。</mark>
 
 **End-to-End Experimental Validation:**
 
@@ -199,7 +199,7 @@ class ReviewersAgent:
 
 The judgment agents are designed with a specific prompt that closely emulates the cognitive framework and evaluation criteria typically employed by human reviewers. This prompt guides the agents to analyze outputs through a lens similar to how a human expert would, considering factors like relevance, coherence, factual accuracy, and overall quality. By crafting these prompts to mirror human review protocols, the system aims to achieve a level of evaluative sophistication that approaches human-like discernment.
 
-<mark>判断智能体设计了特定的提示词，紧密模拟人类评审者通常采用的认知框架和评估标准。该提示词指导智能体通过类似于人类专家的视角来分析输出，考虑相关性、连贯性、事实准确性和整体质量等因素。通过设计这些提示词以镜像人类评审协议，该系统旨在达到接近人类辨别力的评估复杂程度。</mark>
+<mark>判断智能体被设计为使用特定的提示词，紧密模拟人类评审者通常采用的认知框架和评估标准。该提示词指导智能体通过类似于人类专家的视角来分析输出，考虑相关性、连贯性、事实准确性和整体质量等因素。通过设计这些提示词以镜像人类评审协议，该系统旨在达到接近人类辨别力的评估复杂程度。</mark>
 
 ````python
 def get_score(outlined_plan, latex, reward_model_llm, reviewer_type=None, attempts=3, openai_api_key=None):

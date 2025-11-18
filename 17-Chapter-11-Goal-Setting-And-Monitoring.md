@@ -2,7 +2,7 @@
 
 For AI agents to be truly effective and purposeful, they need more than just the ability to process information or use tools; they need a clear sense of direction and a way to know if they're actually succeeding. This is where the Goal Setting and Monitoring pattern comes into play. It's about giving agents specific objectives to work towards and equipping them with the means to track their progress and determine if those objectives have been met.
 
-<mark>要让 AI 智能体真正有效且有目的性，它们需要的不仅仅是处理信息或使用工具的能力；它们需要明确的方向感，并能够知道自己是否真的在取得成功。这就是目标设定与监控模式发挥作用的地方。该模式旨在为智能体提供要努力实现的具体目标，并配备跟踪进度和判断这些目标是否实现的手段。</mark>
+<mark>要让 AI 智能体真正有效且有目的性，它们不仅仅需要处理信息或使用工具的能力，更需要明确的方向感，并能够知道自己是否真的在取得成功。这就是目标设定与监控模式发挥作用的地方。该模式旨在为智能体提供要努力实现的具体目标，并配备跟踪进度和判断这些目标是否实现的手段。</mark>
 
 ## Goal Setting and Monitoring Pattern Overview | <mark>目标设定与监控模式概述</mark>
 
@@ -66,7 +66,7 @@ It employs a "goal-setting and monitoring" pattern where it doesn't just generat
 
 You can best understand this script by imagining it as an autonomous AI programmer assigned to a project (see Fig. 1). The process begins when you hand the AI a detailed project brief, which is the specific coding problem it needs to solve.
 
-<mark>您可以把它想象为，一个被分配到项目的自主 AI 程序员，这样可以更好地理解这个脚本（见图 1）。当您向 AI 提供详细的项目简报时 - 就是它需要解决的特定编程问题 - 它就开始工作了。</mark>
+<mark>您可以把它想象为，一个被分配到项目的自主 AI 程序员，这样可以更好地理解这个脚本（见图 1）。当您向 AI 提供详细的项目简报时 - 就是它需要解决的特定编程问题——它就开始工作了。</mark>
 
 ```python
 # MIT License
@@ -327,7 +327,7 @@ With this assignment in hand, the AI programmer gets to work and produces its fi
 
 If the verdict is "False," the AI doesn't give up. It enters a thoughtful revision phase, using the insights from its self-critique to pinpoint the weaknesses and intelligently rewrite the code. This cycle of drafting, self-reviewing, and refining continues, with each iteration aiming to get closer to the goals. This process repeats until the AI finally achieves a "True" status by satisfying every requirement, or until it reaches a predefined limit of attempts, much like a developer working against a deadline. Once the code passes this final inspection, the script packages the polished solution, adding helpful comments and saving it to a clean, new Python file, ready for use.
 
-<mark>如果评判结果为“False”，AI 也不会放弃。它会进入一个深思熟虑的修订阶段，利用自我批判的见解来找出弱点，并智能地重写代码。这种起草、自我审查和优化的循环持续进行，朝向目标一次次迭代。这个过程重复进行，直到 AI 满足每一个要求，最终达到“True”状态，或者达到预先设定的尝试次数限制 - 就像一个面对截止日期的开发者一样。一旦代码通过了最终检查，脚本就会打包经过润色的解决方案，添加有用的注释，并将其保存到一个新的 Python 文件中，以待使用。</mark>
+<mark>如果评判结果为“False”，AI 也不会放弃。它会进入一个深思熟虑的修订阶段，利用自我批判的见解来找出弱点，并智能地重写代码。这种起草、自我审查和优化的循环持续进行，朝向目标一次次迭代。这个过程重复进行，直到 AI 满足每一个要求，最终达到“True”状态，或者达到预先设定的尝试次数限制——就像一个面对截止日期的开发者一样。一旦代码通过了最终检查，脚本就会打包经过润色的解决方案，添加有用的注释，并将其保存到一个新的 Python 文件中，以待使用。</mark>
 
 **Caveats and Considerations:** It is important to note that this is an exemplary illustration and not production-ready code. For real-world applications, several factors must be taken into account. An LLM may not fully grasp the intended meaning of a goal and might incorrectly assess its performance as successful. Even if the goal is well understood, the model may hallucinate. When the same LLM is responsible for both writing the code and judging its quality, it may have a harder time discovering it is going in the wrong direction.
 

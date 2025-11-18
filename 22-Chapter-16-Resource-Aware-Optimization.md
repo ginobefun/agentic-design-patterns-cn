@@ -58,7 +58,7 @@ However, once the plan is established, the individual tasks within that plan, su
 
 Google's ADK supports this approach through its multi-agent architecture, which allows for modular and scalable applications. Different agents can handle specialized tasks. Model flexibility enables the direct use of various Gemini models, including both Gemini Pro and Gemini Flash, or integration of other models through LiteLLM. The ADK's orchestration capabilities support dynamic, LLM-driven routing for adaptive behavior. Built-in evaluation features allow systematic assessment of agent performance, which can be used for system refinement (see the Chapter on Evaluation and Monitoring).
 
-<mark>Google 的 <code>ADK</code> 通过其多智能体架构支持这种方法，允许模块化和可扩展的应用程序。不同的智能体可以处理专门的任务。模型灵活性支持直接使用各种 Gemini 模型，包括 <code>Gemini Pro</code> 和 <code>Gemini Flash</code>，或通过 <code>LiteLLM</code> 集成其他模型。ADK 的编排功能支持动态的、由 LLM 驱动的路由，以实现自适应行为。内置的评估功能允许系统化评估智能体性能，可用于系统优化（参见评估与监控章节）。</mark>
+<mark>Google 的 <code>ADK</code> 通过其多智能体架构支持这种方法，支持模块化和可扩展的应用程序。不同的智能体可以处理专门的任务。模型灵活性支持直接使用各种 Gemini 模型，包括 <code>Gemini Pro</code> 和 <code>Gemini Flash</code>，或通过 <code>LiteLLM</code> 集成其他模型。ADK 的编排功能支持动态的、由 LLM 驱动的路由，以实现自适应行为。内置的评估功能允许系统化评估智能体性能，可用于系统优化（参见评估与监控章节）。</mark>
 
 Next, two agents with identical setup but utilizing different models and costs will be defined.
 
@@ -480,7 +480,7 @@ Resource-aware optimization is paramount in developing intelligent agent systems
 
 * **Optimization Through Feedback and Flexibility**: Evaluation capabilities for critique and model integration flexibility contribute to adaptive and self-improving system behavior.
 
-<mark>* <strong>通过反馈和灵活性进行优化：</strong>评论的评估能力和模型集成灵活性有助于自适应和自我改进的系统行为。</mark>
+<mark>* <strong>通过反馈和灵活性进行优化：</strong>评论（智能体）的评估能力和模型集成灵活性有助于自适应和自我改进的系统行为。</mark>
 
 * **Additional Resource-Aware Optimizations**: Other methods include Adaptive Tool Use & Selection, Contextual Pruning & Summarization, Proactive Resource Prediction, Cost-Sensitive Exploration in Multi-Agent Systems, Energy-Efficient Deployment, Parallelization & Distributed Computing Awareness, Learned Resource Allocation Policies, Graceful Degradation and Fallback Mechanisms, and Prioritization of Critical Tasks.
 
