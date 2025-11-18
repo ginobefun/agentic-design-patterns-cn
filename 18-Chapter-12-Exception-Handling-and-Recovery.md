@@ -20,7 +20,7 @@ This pattern may sometimes be used with reflection. For example, if an initial a
 
 The Exception Handling and Recovery pattern addresses the need for AI agents to manage operational failures. This pattern involves anticipating potential issues, such as tool errors or service unavailability, and developing strategies to mitigate them. These strategies may include error logging, retries, fallbacks, graceful degradation, and notifications. Additionally, the pattern emphasizes recovery mechanisms like state rollback, diagnosis, self-correction, and escalation, to restore agents to stable operation. Implementing this pattern enhances the reliability and robustness of AI agents, allowing them to function in unpredictable environments. Examples of practical applications include chatbots managing database errors, trading bots handling financial errors, and smart home agents addressing device malfunctions. The pattern ensures that agents can continue to operate effectively despite encountering complexities and failures.
 
-<mark>「异常处理与恢复」模式解决了 AI 智能体管理操作的需求。该模式涉及预测潜在问题（如工具错误或服务不可用）并制定缓解策略。这些策略可能包括错误日志记录、重试、回退、优雅降级和通知。此外，该模式还强调了恢复机制（如状态回滚、诊断、自我纠正和上报升级），以使智能体恢复到稳定运行状态。实施此模式可增强 AI 智能体的可靠性和鲁棒性，使其能够在不可预测的环境中运行。实际应用示例包括：聊天机器人管理数据库错误、交易机器人处理金融错误，以及智能家居智能体解决设备故障。该模式确保智能体在遇到复杂情况和失败时仍能继续有效运行。</mark>
+<mark>「异常处理与恢复」模式解决了 AI 智能体管理运行故障的需求。该模式涉及预测潜在问题（如工具错误或服务不可用）并制定缓解策略。这些策略可能包括错误日志记录、重试、回退、优雅降级和通知。此外，该模式还强调了恢复机制（如状态回滚、诊断、自我纠正和上报升级），以使智能体恢复到稳定运行状态。实施此模式可增强 AI 智能体的可靠性和鲁棒性，使其能够在不可预测的环境中运行。实际应用示例包括：聊天机器人管理数据库错误、交易机器人处理金融错误，以及智能家居智能体解决设备故障。该模式确保智能体在遇到复杂情况和失败时仍能继续有效运行。</mark>
 
 ![](/images/chapter12_fig1.png "Key Components")
 Fig.1: Key components of exception handling and recovery for AI agents
@@ -37,7 +37,7 @@ Error Handling: Once an error is detected, a carefully thought-out response plan
 
 Recovery: This stage is about restoring the agent or system to a stable and operational state after an error. It could involve reversing recent changes or transactions to undo the effects of the error (state rollback). A thorough investigation into the cause of the error is vital for preventing recurrence. Adjusting the agent's plan, logic, or parameters through a self-correction mechanism or replanning process may be needed to avoid the same error in the future. In complex or severe cases, delegating the issue to a human operator or a higher-level system (escalation) might be the best course of action.
 
-<mark><strong>恢复：</strong>该阶段旨在将代理或系统恢复到稳定且可运行的状态。这可能涉及撤销最近的更改或事务，以消除错误的影响（状态回滚）。深入调查错误原因是防止再次发生的关键。可能需要通过自我纠正机制或重新规划过程，调整智能体的计划、逻辑或参数，以避免将来出现相同错误。在复杂或严重的情况下，将问题上报给人工操作员或更高级系统（升级处理）可能是最佳解决方案。</mark>
+<mark><strong>恢复：</strong>该阶段旨在将智能体或系统恢复到稳定且可运行的状态。这可能涉及撤销最近的更改或事务，以消除错误的影响（状态回滚）。深入调查错误原因是防止再次发生的关键。可能需要通过自我纠正机制或重新规划过程，调整智能体的计划、逻辑或参数，以避免将来出现相同错误。在复杂或严重的情况下，将问题上报给人工操作员或更高级系统（升级处理）可能是最佳解决方案。</mark>
 
 Implementation of this robust exception handling and recovery pattern can transform AI agents from fragile and unreliable systems into robust, dependable components capable of operating effectively and resiliently in challenging and highly unpredictable environments. This ensures that the agents maintain functionality, minimize downtime, and provide a seamless and reliable experience even when faced with unexpected issues.
 

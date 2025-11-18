@@ -112,7 +112,7 @@ At Level 3, we see a significant paradigm shift in AI development, moving away f
 
 To bring this concept to life, consider the intricate workflow of launching a new product. Rather than one agent attempting to handle every aspect, a "Project Manager" agent could serve as the central coordinator. This manager would orchestrate the entire process by delegating tasks to other specialized agents: a "Market Research" agent to gather consumer data, a "Product Design" agent to develop concepts, and a "Marketing" agent to craft promotional materials. The key to their success would be the seamless communication and information sharing between them, ensuring all individual efforts align to achieve the collective goal.
 
-<mark>为了将这个概念具体化，可以想象一下发布一款新产品的复杂工作流。并非由一个智能体尝试处理所有方面，而是一个「项目经理」智能体可以作为中心协调者。这个经理会通过将任务委派给其他专业化智能体来统筹整个过程：一个「市场研究」智能体负责收集消费者数据，一个「产品设计」智能体负责开发概念，以及一个「市场营销」智能地负责制作宣传材料。它们成功的关键在于彼此之间无缝的沟通和信息共享，确保所有个体努力都统一指向集体目标。</mark>
+<mark>为了将这个概念具体化，可以想象一下发布一款新产品的复杂工作流。并非由一个智能体尝试处理所有方面，而是一个「项目经理」智能体可以作为中心协调者。这个经理会通过将任务委派给其他专业化智能体来统筹整个过程：一个「市场研究」智能体负责收集消费者数据，一个「产品设计」智能体负责开发概念，以及一个「市场营销」智能体负责制作宣传材料。它们成功的关键在于彼此之间无缝的沟通和信息共享，确保所有个体努力都统一指向集体目标。</mark>
 
 While this vision of autonomous, team-based automation is already being developed, it's important to acknowledge the current hurdles. The effectiveness of such multi-agent systems is presently constrained by the reasoning limitations of LLMs they are using. Furthermore, their ability to genuinely learn from one another and improve as a cohesive unit is still in its early stages. Overcoming these technological bottlenecks is the critical next step, and doing so will unlock the profound promise of this level: the ability to automate entire business workflows from start to finish.
 
