@@ -114,7 +114,7 @@ Adaptive agents exhibit enhanced performance in variable environments through it
 
 - **Trading bot agents** optimize decision-making algorithms by dynamically adjusting model parameters based on high-resolution, real-time market data, thereby maximizing financial returns and mitigating risk factors.
 
-   <mark><strong>交易机器人智能体</strong>：基于基于高频实时市场数据动态调整模型参数，优化决策算法以最大化财务回报并降低风险。</mark>
+  <mark><strong>交易机器人智能体</strong>：基于高频实时市场数据动态调整模型参数，优化决策算法以最大化财务回报并降低风险。</mark>
 
 - **Application agents** optimize user interface and functionality through dynamic modification based on observed user behavior, resulting in increased user engagement and system intuitiveness.
 
@@ -142,31 +142,41 @@ Adaptive agents exhibit enhanced performance in variable environments through it
 
 ---
 
-## Case Study: The Self-Improving Coding Agent (SICA) | <mark>案例研究：自我改进编码智能体（SICA）</mark>
+## Case Study: The Self-Improving Coding Agent (SICA) | <mark>案例研究：具备自我改进能力的编码智能体（SICA）</mark>
 
-The Self-Improving Coding Agent (SICA), developed by Maxime Robeyns, Laurence Aitchison, and Martin Szummer, represents an advancement in agent-based learning, demonstrating the capacity for an agent to modify its own source code. This contrasts with traditional approaches where one agent might train another; SICA acts as both the modifier and the modified entity, iteratively refining its code base to improve performance across various coding challenges.
+**The Self-Improving Coding Agent (SICA)**, developed by Maxime Robeyns, Laurence Aitchison, and Martin Szummer, represents an advancement in agent-based learning, demonstrating the capacity for an agent to modify its own source code. This contrasts with traditional approaches where one agent might train another; SICA acts as both the modifier and the modified entity, iteratively refining its code base to improve performance across various coding challenges.
 
-<mark>由 Maxime Robeyns、Laurence Aitchison 和 Martin Szummer 开发的自我改进编码智能体（SICA）标志着智能体学习领域的重大突破，它展示了智能体能够自主修改自身源代码的非凡能力。SICA 与传统的「一个智能体训练另一个智能体」的模式截然不同——它既是修改者，又是被修改的对象，通过不断迭代优化自身代码库，持续提升在各类编码任务中的表现。</mark>
+<mark>由 Maxime Robeyns、Laurence Aitchison 和 Martin Szummer 开发的具备自我改进能力的编码智能体（SICA）标志着智能体学习领域的重大突破，它展示了智能体能够自主修改自身源代码的非凡能力。与传统的「一个智能体训练另一个智能体」模式不同，SICA 既是修改者又是被修改对象，通过不断迭代优化自身代码库，持续提升在各类编码任务中的表现。</mark>
 
 SICA's self-improvement operates through an iterative cycle (see Fig.1). Initially, SICA reviews an archive of its past versions and their performance on benchmark tests. It selects the version with the highest performance score, calculated based on a weighted formula considering success, time, and computational cost. This selected version then undertakes the next round of self-modification. It analyzes the archive to identify potential improvements and then directly alters its codebase. The modified agent is subsequently tested against benchmarks, with the results recorded in the archive. This process repeats, facilitating learning directly from past performance. This self-improvement mechanism allows SICA to evolve its capabilities without requiring traditional training paradigms.
 
 <mark>SICA 的自我改进通过迭代循环机制实现（见图 1）。每轮迭代的流程如下：首先，SICA 回顾历史版本库及各版本的基准测试表现，根据综合考量成功率、运行时间和计算成本的加权评分，选出表现最优的版本。然后，基于对历史数据的分析，识别潜在的改进点并直接修改代码库。修改后的新版本会立即接受基准测试，测试结果被记录到版本库中。这一循环往复的过程，使 SICA 能够直接从历史表现中学习，无需依赖传统的训练范式即可持续进化自身能力。</mark>
 
-**[Figure 1: SICA self-improvement cycle would be inserted here]**
+![Fig.1: SICA's self-improvement, learning and adapting based on its past versions](/images/chapter09_fig1.png)
+
+Fig.1: SICA's self-improvement, learning and adapting based on its past versions
+
+<mark>图 1：SICA 基于历史版本进行自我改进、学习与适应</mark>
 
 SICA underwent significant self-improvement, leading to advancements in code editing and navigation. Initially, SICA utilized a basic file-overwriting approach for code changes. It subsequently developed a "Smart Editor" capable of more intelligent and contextual edits. This evolved into a "Diff-Enhanced Smart Editor," incorporating diffs for targeted modifications and pattern-based editing, and a "Quick Overwrite Tool" to reduce processing demands.
 
-<mark>SICA 经历了显著的自我改进，在代码编辑和导航方面取得了重大进展。最初，SICA 采用基本的文件覆盖方式进行代码修改。随后开发了「智能编辑器」,能够进行更智能的上下文相关编辑。这进一步发展为「差异增强智能编辑器」,结合差异分析进行针对性修改和基于模式的编辑，并开发了「快速覆盖工具」以减少处理需求。</mark>
+<mark>SICA 经历了显著的自我改进，在代码编辑和导航方面取得了重大进展。最初，SICA 采用基本的文件覆盖方式进行代码修改。随后开发了「智能编辑器」，能够进行更智能的上下文相关编辑。这进一步发展为「差异增强智能编辑器」，结合差异分析进行针对性修改和基于模式的编辑，并开发了「快速覆盖工具」以减少处理需求。</mark>
 
 SICA further implemented "Minimal Diff Output Optimization" and "Context-Sensitive Diff Minimization," using Abstract Syntax Tree (AST) parsing for efficiency. Additionally, a "SmartEditor Input Normalizer" was added. In terms of navigation, SICA independently created an "AST Symbol Locator," using the code's structural map (AST) to identify definitions within the codebase. Later, a "Hybrid Symbol Locator" was developed, combining a quick search with AST checking. This was further optimized via "Optimized AST Parsing in Hybrid Symbol Locator" to focus on relevant code sections, improving search speed (see Fig. 2).
 
-<mark>SICA 进一步实现了「最小差异输出优化」和「上下文敏感差异最小化」,利用抽象语法树（AST）解析提高效率。此外，还添加了「智能编辑器输入规范化器」。在导航方面，SICA 自主开发了「AST 符号定位器」,利用代码的结构图（AST）识别代码库中的定义。后来又开发了「混合符号定位器」,结合快速搜索和 AST 检查。通过「混合符号定位器中的优化 AST 解析」进一步优化，专注于相关代码部分，提高搜索速度（见图 2）。</mark>
+<mark>SICA 进一步实现了「最小差异输出优化」和「上下文敏感差异最小化」，利用抽象语法树（AST）解析提高效率。此外，还添加了「智能编辑器输入规范化器」。在导航方面，SICA 自主开发了「AST 符号定位器」，利用代码的结构图（AST）识别代码库中的定义。后来又开发了「混合符号定位器」，结合快速搜索和 AST 检查。通过「混合符号定位器中的优化 AST 解析」进一步优化，专注于相关代码部分，提高搜索速度（见图 2）。</mark>
 
-**[Figure 2: SICA navigation tools evolution would be inserted here]**
+![Performance across iterations](/images/chapter09_fig2.png)
+
+Fig.2 : Performance across iterations. Key improvements are annotated with their
+corresponding tool or agent modifications. (courtesy of Maxime Robeyns , Martin
+Szummer , Laurence Aitchison)
+
+<mark>图 2：各迭代周期的性能表现。图中标注了关键改进及其对应的工具或智能体修改。（致谢：Maxime Robeyns、Martin Szummer、Laurence Aitchison）</mark>
 
 SICA's architecture comprises a foundational toolkit for basic file operations, command execution, and arithmetic calculations. It includes mechanisms for result submission and the invocation of specialized sub-agents (coding, problem-solving, and reasoning). These sub-agents decompose complex tasks and manage the LLM's context length, especially during extended improvement cycles.
 
-<mark>SICA 的架构包含基本文件操作、命令执行和算术计算的基础工具包。它提供结果提交机制和专用子智能体（编码、问题解决和推理）的调用接口。这些子智能体负责分解复杂任务并管理 LLM 的上下文长度，特别是在长时间的改进周期中。</mark>
+<mar模型>SICA 的架构包含基本文件操作、命令执行和算术计算的基础工具包。它提供结果提交机制和专用子智能体（编码、问题解决和推理）的调用接口。这些子智能体负责分解复杂任务并管理大语言模型的上下文长度，特别是在长时间的改进周期中。</mar模型
 
 An asynchronous overseer, another LLM, monitors SICA's behavior, identifying potential issues such as loops or stagnation. It communicates with SICA and can intervene to halt execution if necessary. The overseer receives a detailed report of SICA's actions, including a callgraph and a log of messages and tool actions, to identify patterns and inefficiencies.
 
@@ -174,7 +184,7 @@ An asynchronous overseer, another LLM, monitors SICA's behavior, identifying pot
 
 SICA's LLM organizes information within its context window, its short-term memory, in a structured manner crucial to its operation. This structure includes a System Prompt defining agent goals, tool and sub-agent documentation, and system instructions. A Core Prompt contains the problem statement or instruction, content of open files, and a directory map. Assistant Messages record the agent's step-by-step reasoning, tool and sub-agent call records and results, and overseer communications. This organization facilitates efficient information flow, enhancing LLM operation and reducing processing time and costs. Initially, file changes were recorded as diffs, showing only modifications and periodically consolidated.
 
-<mark>SICA 的 LLM 在其上下文窗口（即短期记忆）中采用结构化的信息组织方式，这是高效运行的关键。具体结构包含三个层次：**系统提示层**——定义智能体目标、工具及子智能体文档和系统指令；**核心提示层**——包含问题陈述、当前打开文件的内容和目录结构；**助理消息层**——记录智能体的推理轨迹、工具与子智能体的调用过程及结果、以及与监督者的通信。这种清晰的层次结构保证了信息的高效流转，显著提升了 LLM 的运行效率，同时降低了处理时间和成本。为进一步优化，系统最初采用差异记录方式，仅保存文件变更内容并定期合并。</mark>
+<mark>SICA 的 LLM 在其上下文窗口（即短期记忆）中采用结构化的信息组织方式，这是高效运行的关键。具体结构包含三个层次：**系统提示层**——定义智能体目标、工具及子智能体文档和系统指令；**核心提示层**——包含问题陈述、当前打开文件的内容和目录结构；**助理消息层**——记录智能体的推理轨迹、工具与子智能体的调用过程及结果，以及与监督者的通信。这种清晰的层次结构保证了信息的高效流转，显著提升了 LLM 的运行效率，同时降低了处理时间和成本。为进一步优化，系统最初采用差异记录方式，仅保存文件变更内容并定期合并。</mark>
 
 ### SICA: A Look at the Code | <mark>SICA：代码深入了解</mark>
 
