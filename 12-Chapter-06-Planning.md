@@ -50,7 +50,7 @@ In essence, the Planning pattern allows an agent to move beyond simple, reactive
 
 The following section will demonstrate an implementation of the Planner pattern using the Crew AI framework. This pattern involves an agent that first formulates a multi-step plan to address a complex query and then executes that plan sequentially.
 
-<mark>接下来我们将演示如何使用 CrewAI 框架实现规划模式。该模式中，智能体先制定多步骤的计划来解决复杂问题，然后按步骤依次执行该计划。</mark>
+<mark>接下来我们将演示如何使用 CrewAI 框架实现规划模式。该模式中，智能体先制定多步骤的计划来解决复杂请求，然后按步骤依次执行该计划。</mark>
 
 ```python
 import os
@@ -180,7 +180,7 @@ The efficiency of this approach stems from the automation of the iterative searc
 
 The OpenAI Deep Research API is a specialized tool designed to automate complex research tasks. It utilizes an advanced, agentic model that can independently reason, plan, and synthesize information from real-world sources. Unlike a simple Q&A model, it takes a high-level query and autonomously breaks it down into sub-questions, performs web searches using its built-in tools, and delivers a structured, citation-rich final report. The API provides direct programmatic access to this entire process, using at the time of writing models like o3-deep-research-2025-06-26 for high-quality synthesis and the faster o4-mini-deep-research-2025-06-26 for latency-sensitive application
 
-<mark>OpenAI 深度研究接口（OpenAI Deep Research API）是一款专为自动化复杂研究任务而设计的工具。它利用高级智能体模型，能够独立推理、规划，并从真实世界来源整合信息。不同于简单的问答模型，它接收高层次的问题并自主拆解为若干子问题，借助内置工具进行网络搜索，最终给出结构化且带有引用的报告。通过该接口可以用编程的方式控制整个流程。撰写本书时可使用 <code>o3-deep-research-2025-06-26</code> 模型生成高质量的调研内容，而 <code>o4-mini-deep-research-2025-06-26</code> 模型则可用于对延迟更敏感的场景。</mark>
+<mark>OpenAI 深度研究接口（OpenAI Deep Research API）是一款专为自动化复杂研究任务而设计的工具。它利用高级智能体模型，能够独立推理、规划，并从真实世界来源整合信息。不同于简单的问答模型，它接收高层次的问题并自主拆解为若干子问题，借助内置工具进行网络搜索，最终给出结构化且带有引用的报告。通过该接口可以用编程的方式控制整个流程。撰写本书时可使用 <code>o3-deep-research-2025-06-26</code> 模型生成高质量的调研内容，而 <code>o4-mini-deep-research-2025-06-26</code> 模型则适用于对延迟更敏感的场景。</mark>
 
 The Deep Research API is useful because it automates what would otherwise be hours of manual research, delivering professional-grade, data-driven reports suitable for informing business strategy, investment decisions, or policy recommendations. Its key benefits include:
 

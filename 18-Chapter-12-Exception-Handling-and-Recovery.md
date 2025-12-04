@@ -20,7 +20,7 @@ This pattern may sometimes be used with reflection. For example, if an initial a
 
 The Exception Handling and Recovery pattern addresses the need for AI agents to manage operational failures. This pattern involves anticipating potential issues, such as tool errors or service unavailability, and developing strategies to mitigate them. These strategies may include error logging, retries, fallbacks, graceful degradation, and notifications. Additionally, the pattern emphasizes recovery mechanisms like state rollback, diagnosis, self-correction, and escalation, to restore agents to stable operation. Implementing this pattern enhances the reliability and robustness of AI agents, allowing them to function in unpredictable environments. Examples of practical applications include chatbots managing database errors, trading bots handling financial errors, and smart home agents addressing device malfunctions. The pattern ensures that agents can continue to operate effectively despite encountering complexities and failures.
 
-<mark>「异常处理与恢复」模式解决了 AI 智能体管理运行故障的需求。该模式涉及预测潜在问题（如工具错误或服务不可用）并制定缓解策略。这些策略可能包括错误日志记录、重试、回退、优雅降级和通知。此外，该模式还强调了恢复机制（如状态回滚、诊断、自我纠正和上报升级），以使智能体恢复到稳定运行状态。实施此模式可增强 AI 智能体的可靠性和鲁棒性，使其能够在不可预测的环境中运行。实际应用示例包括：聊天机器人管理数据库错误、交易机器人处理金融错误，以及智能家居智能体解决设备故障。该模式确保智能体在遇到复杂情况和失败时仍能继续有效运行。</mark>
+<mark>「异常处理与恢复」模式解决了 AI 智能体管理运行故障的需求。该模式涉及预测潜在问题（如工具错误或服务不可用）并制定缓解策略。这些策略可能包括错误日志记录、重试、回退、优雅降级和通知。此外，该模式还强调了恢复机制（如状态回滚、诊断、自我纠正和升级处理），以使智能体恢复到稳定运行状态。实施此模式可增强 AI 智能体的可靠性和鲁棒性，使其能够在不可预测的环境中运行。实际应用示例包括：聊天机器人管理数据库错误、交易机器人处理金融错误，以及智能家居智能体解决设备故障。该模式确保智能体在遇到复杂情况和失败时仍能继续有效运行。</mark>
 
 ![](/images/chapter12_fig1.png "Key Components")
 Fig.1: Key components of exception handling and recovery for AI agents
@@ -67,7 +67,7 @@ Exception Handling and Recovery is critical for any agent deployed in a real-wor
     
 - Web Scraping Agents: When a web scraping agent encounters a CAPTCHA, a changed website structure, or a server error (e.g., 404 Not Found, 503 Service Unavailable), it needs to handle these gracefully. This could involve pausing, using a proxy, or reporting the specific URL that failed.
     
-- <mark><strong>网页抓取智能体：</strong>当网页抓取智能体遇到 CAPTCHA、网站结构变更或服务器错误（例如，404 Not Found、503 Service Unavailable）时，它需要优雅地处理这些情况。这可能包括暂停、使用代理或报告失败的具体 URL。</mark>
+- <mark><strong>网页抓取智能体：</strong>当网页抓取智能体遇到验证码（CAPTCHA）、网站结构变更或服务器错误（例如，404 Not Found、503 Service Unavailable）时，它需要优雅地处理这些情况。这可能包括暂停、使用代理或报告失败的具体 URL。</mark>
     
 - Robotics and Manufacturing: A robotic arm performing an assembly task might fail to pick up a component due to misalignment. It needs to detect this failure (e.g., via sensor feedback), attempt to readjust, retry the pickup, and if persistent, alert a human operator or switch to a different component.
     
@@ -147,7 +147,7 @@ Why: The Exception Handling and Recovery pattern provides a standardized solutio
 
 Rule of thumb: Use this pattern for any AI agent deployed in a dynamic, real-world environment where system failures, tool errors, network issues, or unpredictable inputs are possible and operational reliability is a key requirement.
 
-<mark><strong>经验法则：</strong>任何部署在动态、真实世界环境且对操作可靠性要求极高的 AI 智能体，在这些场景中可能遭遇系统故障、工具错误、网络问题或不可预测的输入。</mark>
+<mark><strong>经验法则：</strong>本模式适用于任何部署在动态、真实世界环境中的 AI 智能体，特别是当这些场景中可能遭遇系统故障、工具错误、网络问题或不可预测的输入，且对操作可靠性有关键要求时。</mark>
 
 # Visual Summary | <mark>可视化总结</mark>
 

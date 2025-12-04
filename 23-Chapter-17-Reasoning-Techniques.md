@@ -412,7 +412,7 @@ Fig. 5: Google Deep Research for Information Gathering
 
 A fundamental shift introduced by these tools is the change in the search process itself. A standard search provides immediate links, leaving the work of synthesis to you. Deep Research operates on a different model. Here, you task an AI with a complex query and grant it a "time budget"—usually a few minutes. In return for this patience, you receive a detailed report.
 
-<mark>这些工具带来的一个根本性转变是搜索过程本身的改变。标准搜索会立即提供链接，将综合整理的工作留给你。而深度研究则采用不同的模式。在这里，你给 AI 分配一个复杂的查询任务，并授予它一个「时间预算」——通常是几分钟。作为这种耐心的回报，你将收到一份详细的报告*。</mark>
+<mark>这些工具带来的一个根本性转变是搜索过程本身的改变。标准搜索会立即提供链接，将综合整理的工作留给你。而深度研究则采用不同的模式。在这里，你给 AI 分配一个复杂的查询任务，并授予它一个「时间预算」——通常是几分钟。作为这种耐心的回报，你将收到一份详细的报告。</mark>
 
 During this time, the AI works on your behalf in an agentic way. It autonomously performs a series of sophisticated steps that would be incredibly time-consuming for a person:
 
