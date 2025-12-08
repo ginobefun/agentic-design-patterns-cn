@@ -484,7 +484,7 @@ from langchain.memory import ConversationBufferMemory
 llm = OpenAI(temperature=0)
 template = """You are a helpful travel agent.
 
-Previous conversation:1
+Previous conversation:
 {history}
 
 New question: {question}
@@ -793,4 +793,5 @@ This chapter dove into the really important job of memory management for agent s
 3. Vertex AI Agent Engine Memory Bank: <https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-memory-bank-in-public-preview>
 
    <mark>Vertex AI 智能体引擎的 Memory Bank：<https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-memory-bank-in-public-preview></mark>
+
 
